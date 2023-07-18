@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "==1.4.2"
+mkdocs-material = "==9.1.4"
+mkdocs-glightbox = "==0.3.2"
+mkdocs-codeinclude-plugin = "==0.2.1"
+mkdocs-git-revision-date-localized-plugin = "==1.2.0"
+mkdocs-drawio-exporter = "==0.8.0"
+mkdocs-mermaid2-plugin = "==0.6.0"
+mkdocs-macros-plugin = "==1.0.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+dev = "mkdocs serve"
