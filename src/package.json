@@ -1,0 +1,19 @@
+{
+  "name": "grpc-demo",
+  "version": "1.0.0",
+  "description": "gRPC application demo.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charlie Santos",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "1.8.18",
+    "@grpc/proto-loader": "0.7.8",
+    "google-protobuf": "3.21.2",
+    "path": "0.12.7",
+    "uuid": "9.0.0"
+  }
+}

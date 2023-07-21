@@ -1,4 +1,4 @@
-site_name: GRPC
+site_name: gRPC
 docs_dir: docs
 
 theme:
@@ -81,6 +81,11 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
-  - macros:
-      include_dir: docs/assets/services    
+  # - macros:
+  #     include_dir: docs/assets/services    
   - mermaid2
+
+
+nav:
+  - index.md
+  - grpc-communication.md

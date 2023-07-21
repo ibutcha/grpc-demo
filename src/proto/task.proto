@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package taskPackage;
+
+message NoParameters {}
+
+message Task {
+    string id = 1;
+    string description = 2;
+    optional string jiraId = 3;
+}
+
+message Tasks {
+    repeated Task tasks = 1;
+}
+
+message Transaction {
+    string transactionId = 1;
+}
+
+message Transactions {
+    repeated string transactionIds = 1;
+}
+
+service TaskService {
+    rpc createTask (Task) returns (Transaction);
+    rpc getTasks (NoParameters) returns (stream Task);
+    rpc streamCreateTask (stream Task) returns (Transactions);
+    rpc streamContinuesTaskCreation (stream Task) returns (stream Transaction);
+}

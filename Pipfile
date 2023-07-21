@@ -12,6 +12,8 @@ mkdocs-git-revision-date-localized-plugin = "==1.2.0"
 mkdocs-drawio-exporter = "==0.8.0"
 mkdocs-mermaid2-plugin = "==0.6.0"
 mkdocs-macros-plugin = "==1.0.1"
+grpcio = "*"
+grpcio-tools = "*"
 
 [dev-packages]
 
